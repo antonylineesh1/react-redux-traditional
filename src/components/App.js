@@ -1,11 +1,12 @@
 import '../App.css';
-import Home from './Home';
 import HomeContainer from './../containers/HomeContainer';
+import HeaderContainer from '../containers/HeaderContainer';
 
 function App() {
   return (
-    <div className="App">    
-      <HomeContainer/>
+    <div className="App">
+      <HeaderContainer />
+      <HomeContainer />
     </div>
   );
 }

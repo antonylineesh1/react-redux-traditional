@@ -4,9 +4,6 @@ export default function Home(props) {
     console.log('props', props);
     return (
         <div>
-            <div className="cart">
-                <h1>Cart :{props.data.cardItems.length}</h1>
-            </div>
             <div className="item">
                 <img width="100px" height="80px" src='https://media.4rgos.it/s/Argos/8816155_R_SET?$Main768$&w=620&h=620' />
                 <span>Samsung</span>
