@@ -9,6 +9,7 @@ export default function Home(props) {
                 <span>Samsung</span>
                 <span>Price: 200$</span>
                 <button onClick={() => props.addToCartHandler({ name: 'Samsung', price: 200 })}>Add To Cart</button>
+                <button onClick={() => props.removeFromCartHandler()}>Remove</button>
             </div>
         </div>
     )

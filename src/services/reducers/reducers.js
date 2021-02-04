@@ -1,4 +1,4 @@
-import { ADD_TO_CART } from './../constants';
+import { ADD_TO_CART, REMOVE_FROM_CART } from './../constants';
 const initialState = {
     cardData: []
 }
@@ -14,6 +14,9 @@ export default function cardItems(state = [], action) {
                 { cardData: action.data }
             ]
 
+        case REMOVE_FROM_CART:
+            const indexToRemove = state.length - 1;
+            return state.filter((_, i) => i !== indexToRemove);
         default:
             return state;
     }
